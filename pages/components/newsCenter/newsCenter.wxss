@@ -1,0 +1,57 @@
+/* pages/componets/newsCenter/newsCenter.wxss */
+
+/* 页面整体 */
+.container {
+  width: 80%;
+  margin: 50rpx auto;
+}
+/* 新闻中心大标题 */
+.title {
+  font-size: large;
+  color: #666;
+}
+
+/* 每一项新闻的容器 */
+.newsItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 70rpx;
+}
+/* 使用伪类元素为盒子添加渐变背景色 */
+.newsItem::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: -3px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #09437c, #578aef);
+}
+/* 标题和时间的容器 */
+.titleAndTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* 新闻标题 */
+.newsTitle {
+  font-size: 38rpx;
+}
+/* 新闻时间 */
+.newsTime {
+  font-size: 22rpx;
+  color: #666;
+}
+/* 新闻图片 */
+.newsImage {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 5%;
+}

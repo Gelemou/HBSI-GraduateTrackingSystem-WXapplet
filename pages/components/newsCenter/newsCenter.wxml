@@ -1,0 +1,13 @@
+<!--pages/componets/newsCenter/newsCenter.wxml-->
+<view class="container">
+  <h3 class="title">新闻中心 NewsCenter</h3>
+  <block wx:for="{{ news }}" wx:key="newsId">
+    <view class="newsItem">
+      <view class="titleAndTime">
+        <h3 class="newsTitle">{{ item.newsTitle }}</h3>
+        <span class="newsTime">{{ item.newsTime }}</span>
+      </view>
+      <image class="newsImage" src="{{ item.imageSrc }}" mode="aspectFill" />
+    </view>
+  </block>
+</view>

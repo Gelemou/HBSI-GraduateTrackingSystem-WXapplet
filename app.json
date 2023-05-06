@@ -1,24 +1,41 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/activity/activity"
+    "pages/show/show",
+    "pages/memory/memory",
+    "pages/active/active"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "毕业生跟踪系统",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "text"
+        "text": "主页",
+        "iconPath": "./public/shouye.png",
+        "selectedIconPath": "./public/shouye.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "测试内容"
+        "pagePath": "pages/show/show",
+        "text": "校友风采",
+        "iconPath": "./public/zhanshijia.png",
+        "selectedIconPath": "./public/zhanshijia.png"
+      },
+      {
+        "pagePath": "pages/memory/memory",
+        "text": "班级记忆",
+        "iconPath": "./public/fengcaizhanshi.png",
+        "selectedIconPath": "./public/fengcaizhanshi.png"
+      },
+      {
+        "pagePath": "pages/active/active",
+        "text": "校友活动",
+        "iconPath": "./public/huodongxiangqu.png",
+        "selectedIconPath": "./public/huodongxiangqu.png"
       }
     ]
   },
