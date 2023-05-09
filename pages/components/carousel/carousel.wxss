@@ -3,11 +3,11 @@
   padding: 0;
 }
 .swiper {
-  width: 400rpx;
+  width: 100%;
   height: 400rpx;
 }
 .img {
-  width: 400rpx;
+  width: 100%;
   height: 400rpx;
   object-fit: cover;
 }

@@ -1,8 +1,10 @@
+<wxs src="../../../wxs/imageUrl.wxs" module="url">
+</wxs>
 <view class="container">
   <swiper class="swiper" indicator-dots="true" autoplay="true" indicator-active-color="#fff" circular="true">
-    <block wx:for="{{ background }}" wx:key="*this">
+    <block wx:for="{{ background }}" wx:key="wxSwiperId">
       <swiper-item class="swiper-item">
-        <image class="img" src="{{ item }}" mode="aspectFill"></image>
+        <image class="img" src="{{ url.getImageUrl(item.swiperUrl) }}" mode="aspectFill"></image>
       </swiper-item>
     </block>
   </swiper>

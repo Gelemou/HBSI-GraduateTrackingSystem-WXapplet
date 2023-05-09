@@ -1,0 +1,7 @@
+// 导入wxs模块,CommonJs导入语法
+var server = require("./server.wxs");
+
+function getImageUrl(url) {
+  return server.SERVER_BASE_URL + url;
+}
+module.exports.getImageUrl = getImageUrl;

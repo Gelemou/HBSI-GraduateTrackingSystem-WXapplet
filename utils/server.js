@@ -1,0 +1,5 @@
+const SERVER_BASE_URL = "http://42.51.17.36:9091";
+const SERVER_IMAGE_BASE_URL = "http://42.51.17.36:888";
+module.exports = {
+  SERVER_BASE_URL, SERVER_IMAGE_BASE_URL
+}

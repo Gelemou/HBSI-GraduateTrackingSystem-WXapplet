@@ -1,0 +1,13 @@
+<!--pages/componets/newsCenter/newsCenter.wxml-->
+<view class="container">
+  <h3 class="title">通知公告 Notice</h3>
+  <block wx:for="{{ notice }}" wx:key="newsId">
+    <view class="noticeItem">
+      <view class="titleAndTime">
+        <h3 class="noticeTitle">{{ item.newsTitle }}</h3>
+        <span class="noticeTime">{{ item.newsTime }}</span>
+      </view>
+      <image class="noticeImage" src="{{ item.imageSrc }}" mode="aspectFill" />
+    </view>
+  </block>
+</view>
