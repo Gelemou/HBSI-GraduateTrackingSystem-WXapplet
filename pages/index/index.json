@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "newsCenter": "../components/newsCenter/newsCenter"
+    "newsCenter": "../components/newsCenter/newsCenter",
+    "carousel": "../components/carousel/carousel"
   }
 }

@@ -1,0 +1,9 @@
+<view class="container">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" indicator-active-color="#fff" circular="true">
+    <block wx:for="{{ background }}" wx:key="*this">
+      <swiper-item class="swiper-item">
+        <image class="img" src="{{ item }}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
