@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="title">
+    <h3 class="showTitle">
+      <text>Show</text> 校友风采
+    </h3>
+    <block wx:for="{{ background }}" wx:key="*this">
+      <view class="item">
+        <image class="image" src="../../../public/Snipaste_2022-12-20_20-52-43(1).png" mode="aspectFill"/>
+        <span class="name">我是软件工程师--张三</span>
+      </view>
+    </block>
+  </view>
+</view>

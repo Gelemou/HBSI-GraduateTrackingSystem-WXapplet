@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/show/show",
     "pages/memory/memory",
-    "pages/active/active"
+    "pages/activities/activities"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,13 +32,13 @@
         "selectedIconPath": "./public/fengcaizhanshi.png"
       },
       {
-        "pagePath": "pages/active/active",
+        "pagePath": "pages/activities/activities",
         "text": "校友活动",
         "iconPath": "./public/huodongxiangqu.png",
         "selectedIconPath": "./public/huodongxiangqu.png"
       }
     ]
-  },
+  },  
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

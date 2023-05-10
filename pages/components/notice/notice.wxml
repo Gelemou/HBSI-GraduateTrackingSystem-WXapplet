@@ -1,6 +1,8 @@
 <!--pages/componets/newsCenter/newsCenter.wxml-->
 <view class="container">
-  <h3 class="title">通知公告 Notice</h3>
+  <button>
+    <h3 class="title">通知公告 Notice</h3>
+  </button>
   <block wx:for="{{ notice }}" wx:key="newsId">
     <view class="noticeItem">
       <view class="titleAndTime">

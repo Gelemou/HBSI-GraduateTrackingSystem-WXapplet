@@ -1,6 +1,8 @@
 <!--pages/componets/newsCenter/newsCenter.wxml-->
 <view class="container">
-  <h3 class="title">新闻中心 NewsCenter</h3>
+  <button bindtap="onSwitch">
+    <h3 class="title">新闻中心 NewsCenter</h3>
+  </button>
   <block wx:for="{{ news }}" wx:key="newsId">
     <view class="newsItem">
       <view class="titleAndTime">

@@ -1,5 +1,6 @@
 // pages/componets/newsCenter/newsCenter.js
 Component({
+  
   /**
    * 组件的属性列表
    */
@@ -36,6 +37,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onSwitch() {
+      wx.switchTab({
+        url: '../../show/show',
+        success() {
+          console.log("成功");
+        },
+        fail() {
+          console.log("失败");
+        }
+      })
+    }
   }
 })

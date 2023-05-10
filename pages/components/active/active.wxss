@@ -1,1 +1,22 @@
-/* pages/components/active/active.wxss */
+/* 页面整体 */
+.container {
+  width: 80%;
+  margin: 100rpx auto;
+}
+/* 近期活动大标题 */
+.title {
+  font-size: large;
+  color: #666;
+}
+/* 每一项内容 */
+.item {
+  height: 150rpx;
+  line-height: 150rpx;
+  font-size: 38rpx;
+  border-bottom: 1px solid grey;
+  overflow: hidden;
+}
+/* 最后一项内容不需要下划线 */
+.item:last-child {
+  border-bottom: none;
+}

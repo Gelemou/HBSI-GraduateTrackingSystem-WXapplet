@@ -1,0 +1,42 @@
+.container {
+  width: 80%;
+  margin: 100rpx auto;
+}
+/* 大标题 */
+.title {
+  font-size: 50rpx;
+  color: #000;
+  padding-top: 40rpx;
+}
+/* Show 校友风采 */
+.showTitle {
+  display: flex;
+  flex-direction: column;
+}
+/* 每一项 */
+.item {
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 50rpx;
+  padding-bottom: 50rpx;
+  border-bottom: 1px solid grey;
+}
+.item:last-child {
+  border-bottom: none;
+}
+/* 人物图片 */
+.image {
+  width: 180rpx;
+  height: 180rpx;
+  padding-right: 40rpx;
+}
+/* 名字 */
+.name {
+  width: 400rpx;
+  font-size: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}

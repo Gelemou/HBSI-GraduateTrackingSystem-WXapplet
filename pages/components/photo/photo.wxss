@@ -1,0 +1,38 @@
+/* 页面整体 */
+.container {
+  height: 800rpx;
+  background-color: #f2f3f9;
+}
+.content {
+  width: 80%;
+  margin: 100rpx auto;
+}
+/* 大标题 */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50rpx;
+  color: #000;
+  padding-top: 40rpx;
+}
+/* Photos 历届毕业照 */
+.photoTitle {
+  display: flex;
+  flex-direction: column;
+}
+/* 查看更多 */
+.more {
+  color: #09437c;
+  padding-bottom: 14rpx;
+  border-bottom: 4rpx solid #09437c;
+  font-size: 30rpx;
+}
+/* 滑动 */
+.swiper {
+  height: 800rpx;
+  padding-top: 40rpx;
+}
+/* 滑动的图片 */
+.image {
+}

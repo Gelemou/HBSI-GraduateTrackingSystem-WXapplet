@@ -2,6 +2,6 @@
 var server = require("./server.wxs");
 
 function getImageUrl(url) {
-  return server.SERVER_BASE_URL + url;
+  return server.SERVER_IMAGE_BASE_URL + url;
 }
 module.exports.getImageUrl = getImageUrl;

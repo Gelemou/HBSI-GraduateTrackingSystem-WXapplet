@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="title">
+    <h3 class="activityTitle">
+      <text>Activity</text> <text>校友活动</text>
+    </h3>
+    <view>
+      <scroll-view class="scrollView" scroll-x="true" scroll-left="1">
+        <block wx:for="{{ background }}" wx:key="*this">
+          <view class="item">
+            <image src="../../../public/Snipaste_2022-12-20_20-52-43(1).png" mode="aspectFill"/>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

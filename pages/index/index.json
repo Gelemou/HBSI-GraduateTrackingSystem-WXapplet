@@ -2,6 +2,10 @@
   "usingComponents": {
     "newsCenter": "../components/newsCenter/newsCenter",
     "carousel": "../components/carousel/carousel",
-    "notice": "../components/notice/notice"
+    "notice": "../components/notice/notice",
+    "active": "../components/active/active",
+    "photo": "../components/photo/photo",
+    "sfShow": "../components/sfShow/sfShow",
+    "sfActivity": "../components/sfActivity/sfActivity"
   }
 }

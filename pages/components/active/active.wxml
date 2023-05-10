@@ -1,2 +1,21 @@
 <!--pages/components/active/active.wxml-->
-<text>pages/components/active/active.wxml</text>
+<view class="container">
+  <button>
+    <h3 class="title">近期活动 Activities</h3>
+  </button>
+  <block>
+    <view class="item">
+      我我我我我我哇哇哇哇哇
+    </view>
+  </block>
+  <block>
+    <view class="item">
+      我我我我我我
+    </view>
+  </block>
+  <block>
+    <view class="item">
+      我我我我我我
+    </view>
+  </block>
+</view>

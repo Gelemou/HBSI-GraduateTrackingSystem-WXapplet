@@ -1,0 +1,25 @@
+/* 页面容器 */
+.container {
+  width: 80%;
+  margin: 50rpx auto;
+}
+/* 大标题 */
+.title {
+  font-size: 50rpx;
+  color: #000;
+}
+/* Activity 校友活动 */
+.activityTitle {
+  display: flex;
+  flex-direction: column;
+}
+/* 滚动视图 */
+.scrollView {
+  white-space: nowrap;
+}
+/* 每一项 */
+.item {
+  height: 500rpx;
+  display: inline-block;
+  margin-top: 50rpx;
+}

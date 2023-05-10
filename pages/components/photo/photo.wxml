@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="content">
+    <view class="title">
+      <h3 class="photoTitle">
+        <text>Photos</text> 历届毕业照
+      </h3>
+      <span class="more">查看更多</span>
+    </view>
+    <swiper class="swiper">
+      <block wx:for= "{{ background }}" wx:key="*this">
+        <swiper-item class="swiper-item">
+          <image class="image" src="{{ item}}" mode="aspectFill"/>
+        </swiper-item>  
+      </block>
+    </swiper>
+  </view>
+</view>
