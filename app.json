@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/show/show",
     "pages/memory/memory",
-    "pages/activities/activities"
+    "pages/activities/activities",
+    "pages/components/second/newsDetail/newsDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -38,7 +39,7 @@
         "selectedIconPath": "./public/huodongxiangqu.png"
       }
     ]
-  },  
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

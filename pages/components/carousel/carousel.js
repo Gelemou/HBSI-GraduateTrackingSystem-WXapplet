@@ -1,5 +1,5 @@
 // pages/components/carousel/carousel.js
-const server = require("../../../utils/server");
+// const server = require("../../../utils/server");
 const http = require("../../../utils/request");
 Component({
   /**

@@ -1,4 +1,5 @@
 <!--pages/componets/newsCenter/newsCenter.wxml-->
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
 <view class="container">
   <button bindtap="onSwitch">
     <h3 class="title">新闻中心 NewsCenter</h3>
@@ -6,10 +7,10 @@
   <block wx:for="{{ news }}" wx:key="newsId">
     <view class="newsItem">
       <view class="titleAndTime">
-        <h3 class="newsTitle">{{ item.newsTitle }}</h3>
-        <span class="newsTime">{{ item.newsTime }}</span>
+        <h3 class="newsTitle">{{ item.title }}</h3>
+        <span class="newsTime">{{ item.createTime }}</span>
       </view>
-      <image class="newsImage" src="{{ item.imageSrc }}" mode="aspectFill" />
+      <image class="newsImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill" />
     </view>
   </block>
 </view>

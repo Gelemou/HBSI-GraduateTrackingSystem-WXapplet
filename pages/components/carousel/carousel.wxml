@@ -1,4 +1,4 @@
-<wxs src="../../../wxs/imageUrl.wxs" module="url">
+<wxs src="/wxs/imageUrl.wxs" module="url">
 </wxs>
 <view class="container">
   <swiper class="swiper" indicator-dots="true" autoplay="true" indicator-active-color="#fff" circular="true">

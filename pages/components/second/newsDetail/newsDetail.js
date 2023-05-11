@@ -1,4 +1,4 @@
-// pages/active/active.js
+// pages/components/second/newsDetail/newsDetail.js
 Page({
 
   /**
