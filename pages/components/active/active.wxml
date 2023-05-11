@@ -1,21 +1,11 @@
 <!--pages/components/active/active.wxml-->
 <view class="container">
-  <button>
+  <button bindtap="onSwitch">
     <h3 class="title">近期活动 Activities</h3>
   </button>
-  <block>
+  <block wx:for="{{ activity }}" wx:key="activityId">
     <view class="item">
-      我我我我我我哇哇哇哇哇
-    </view>
-  </block>
-  <block>
-    <view class="item">
-      我我我我我我
-    </view>
-  </block>
-  <block>
-    <view class="item">
-      我我我我我我
+      {{ item.title }}
     </view>
   </block>
 </view>

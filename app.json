@@ -4,7 +4,9 @@
     "pages/show/show",
     "pages/memory/memory",
     "pages/activities/activities",
-    "pages/components/second/newsDetail/newsDetail"
+    "pages/components/second/newsDetail/newsDetail",
+    "pages/components/second/noticeDetail/noticeDetail",
+    "pages/components/second/activeDetail/activeDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

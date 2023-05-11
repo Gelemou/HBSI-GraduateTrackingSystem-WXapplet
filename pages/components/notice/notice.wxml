@@ -1,15 +1,16 @@
 <!--pages/componets/newsCenter/newsCenter.wxml-->
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
 <view class="container">
-  <button>
+  <button bindtap="onSwitch">
     <h3 class="title">通知公告 Notice</h3>
   </button>
   <block wx:for="{{ notice }}" wx:key="newsId">
     <view class="noticeItem">
       <view class="titleAndTime">
-        <h3 class="noticeTitle">{{ item.newsTitle }}</h3>
-        <span class="noticeTime">{{ item.newsTime }}</span>
+        <h3 class="noticeTitle">{{ item.title }}</h3>
+        <span class="noticeTime">{{ item.createTime }}</span>
       </view>
-      <image class="noticeImage" src="{{ item.imageSrc }}" mode="aspectFill" />
+      <image class="noticeImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill" />
     </view>
   </block>
 </view>
