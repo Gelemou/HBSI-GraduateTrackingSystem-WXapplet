@@ -10,6 +10,7 @@
 }
 /* Show 校友风采 */
 .showTitle {
+  width: 220rpx;
   display: flex;
   flex-direction: column;
 }

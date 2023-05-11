@@ -1,12 +1,13 @@
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
 <view class="container">
   <view class="title">
-    <h3 class="showTitle">
+    <h3 class="showTitle" bindtap="onSwitch">
       <text>Show</text> 校友风采
     </h3>
-    <block wx:for="{{ background }}" wx:key="*this">
+    <block wx:for="{{ background }}" wx:key="graduateId">
       <view class="item">
-        <image class="image" src="../../../public/Snipaste_2022-12-20_20-52-43(1).png" mode="aspectFill"/>
-        <span class="name">我是软件工程师--张三</span>
+        <image class="image" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill"/>
+        <span class="name">{{ item.post }}--{{ item.name }}</span>
       </view>
     </block>
   </view>
