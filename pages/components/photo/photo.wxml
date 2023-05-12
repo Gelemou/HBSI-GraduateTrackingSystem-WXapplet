@@ -7,7 +7,7 @@
       </h3>
       <span class="more" bindtap="onSwitch">查看更多</span>
     </view>
-    <swiper class="swiper">
+    <swiper class="swiper" indicator-dots="true">
       <block wx:for= "{{ background }}" wx:key="classId">
         <swiper-item class="swiper-item">
           <image class="image" src="{{ url.getImageUrl(item.coverPicture) }}" mode="aspectFill"/>
