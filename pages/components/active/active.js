@@ -25,8 +25,8 @@ Component({
    */
   methods: {
     onSwitch() {
-      wx.navigateTo({
-        url: '/pages/components/second/activeDetail/activeDetail',
+      wx.switchTab({
+        url: '/pages/activities/activities',
       })
     }
   }
