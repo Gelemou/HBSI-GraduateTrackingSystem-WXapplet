@@ -1,18 +1,22 @@
 // pages/components/second/noticeDetail/noticeDetail.js
+const http = require("../../../../utils/request")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    notice: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    let that = this;
+    http.request("/news/wx/getListAll", {pageNum: 1, pageSize: 4, newsType: 1}).then((res) => {
+      that.setData({notice: res.result.list});
+    })
   },
 
   /**

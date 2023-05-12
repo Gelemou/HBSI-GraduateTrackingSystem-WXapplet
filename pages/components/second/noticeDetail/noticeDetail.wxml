@@ -1,2 +1,16 @@
 <!--pages/components/second/noticeDetail/noticeDetail.wxml-->
-<text>pages/components/second/noticeDetail/noticeDetail.wxml</text>
+<view class="container">
+  <view class="title">
+    <h3>通知详情</h3>
+  </view>
+  <block wx:for="{{ notice }}" wx:key="newsId">
+    <view class="item">
+      <view class="itemTime">
+        {{ item.createTime }}
+      </view>
+      <view class="itemTitle">
+        {{ item.title }}
+      </view>
+    </view>
+  </block>
+</view>

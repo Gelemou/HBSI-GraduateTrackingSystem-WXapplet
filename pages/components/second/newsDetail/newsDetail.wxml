@@ -1,2 +1,16 @@
 <!--pages/components/second/newsDetail/newsDetail.wxml-->
-<text>pages/components/second/newsDetail/newsDetail.wxml</text>
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
+<view class="container">
+  <view class="title">
+    <text class="enTitle">News Detail</text> <text class="zhTitle">新闻详情</text>
+  </view>
+  <block wx:for="{{news}}" wx:key="newsId">
+    <view class="item">
+      <image class="itemImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill"/>
+      <view class="titleTime">
+        <h3 class="itemTitle">{{ item.title }}</h3>
+        <span class="itemTime">{{ item.createTime }}</span>
+      </view>
+    </view>
+  </block>
+</view>

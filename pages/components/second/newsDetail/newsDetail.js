@@ -1,18 +1,22 @@
 // pages/components/second/newsDetail/newsDetail.js
+const http = require("../../../../utils/request");
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    news: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    let that = this;
+    http.request("/news/wx/getListAll", {pageNum: 1, pageSize: 4, newsType: 2}).then((res) => {
+      that.setData({ news: res.result.list });
+    })
   },
 
   /**

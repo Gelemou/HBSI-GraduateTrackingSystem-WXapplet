@@ -1,1 +1,39 @@
 /* pages/components/second/noticeDetail/noticeDetail.wxss */
+/* 页面整体 */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* 大标题 */
+.title {
+  font-size: 70rpx;
+  text-align: center;
+}
+/* 每一项 */
+.item {
+  display: flex;
+  align-items: center;
+  background-color: #efeeee;
+  margin-top: 50rpx;
+}
+/* 通知时间 */
+.itemTime {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #1a5ba1;
+  font-size: 40rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+/* 通知标题 */
+.itemTitle {
+  width: 400rpx;
+  padding-left: 40rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

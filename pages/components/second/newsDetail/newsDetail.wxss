@@ -1,1 +1,55 @@
-/* pages/components/second/newsDetail/newsDetail.wxss */
+/* 页面整体 */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+/* 大标题 */
+.title {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+}
+/* 英文标题 */
+.enTitle {
+  font-size: 36rpx;
+  font-weight: 300;
+  margin-bottom: 15rpx;
+}
+/* 中文标题 */
+.zhTitle {
+  font-size: 56rpx;
+}
+/* 每一项 */
+.item {
+  height: 300rpx;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 40rpx 0;
+}
+/* 每一项的图片 */
+.itemImage {
+  width: 250rpx;
+  height: 240rpx;
+}
+/* 标题和时间容器 */
+.titleTime {
+  width: 300rpx;
+  display: flex;
+  flex-direction: column;
+}
+/* 新闻标题 */
+.itemTitle {
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  white-space: nowrap;
+  font-size: 60rpx;
+  font-weight: 700;
+  padding-bottom: 20rpx;
+}
+/* 新闻时间 */
+.itemTime {
+  font-size: 35rpx;
+  font-weight: 300;
+}
