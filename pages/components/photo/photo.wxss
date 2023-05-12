@@ -30,9 +30,10 @@
 }
 /* 滑动 */
 .swiper {
-  height: 800rpx;
+  height: 500rpx;
   padding-top: 40rpx;
 }
-/* 滑动的图片 */
-.image {
+.swiper-item {
+  display: flex;
+  justify-content: center;
 }
