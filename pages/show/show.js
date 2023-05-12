@@ -1,18 +1,22 @@
 // pages/activity/activity.js
+const http = require("../../utils/request")
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    shows: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    let that = this; 
+    http.request("/graduate/wx/getExcellentGraduateList", {pageNum: 1, pageSize: 8}).then((res) => {
+      that.setData({ shows: res.result.list });
+    })
   },
 
   /**

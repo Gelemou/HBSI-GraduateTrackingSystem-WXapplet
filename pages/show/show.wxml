@@ -1,1 +1,9 @@
-11111
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
+<view class="container">
+    <block wx:for="{{ shows }}" wx:key="graduateId">
+      <view class="item">
+        <image class="itemImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill"/>
+        <span class="itemName">{{ item.post }}--{{ item.name }}</span>
+      </view>
+    </block>
+</view>
