@@ -1,1 +1,30 @@
-/* pages/activities/activities.wxss */
+/* 页面整体 */
+.container {
+  width: 80%;
+  margin: 40rpx auto;
+}
+/* 标题容器 */
+.title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 45rpx;
+}
+/* 活动通知 */
+.title-1, .title-2 {
+  width: 220rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 16rpx solid rgba(3, 62, 131, 0.4);
+  color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+.active {
+  width: 220rpx;
+  padding-bottom: 30rpx;
+  color: #000;
+  border-bottom: 16rpx solid rgb(3, 62, 131);
+  text-align: center;
+}
+/* 滑动 */
+.swiper {
+  height: 1300rpx;
+}

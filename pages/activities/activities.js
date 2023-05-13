@@ -1,18 +1,25 @@
+// const { cursorTo } = require("readline");
+
 // pages/activities/activities.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  // 点击活动通知时切换样式和内容
+  switchNotice() {
+    this.setData({switchCurrent : 0});
   },
-
+  switchGlimplse() {
+    this.setData({switchCurrent : 1});
+  },
+  // 当switchCurrent改变时调用函数
+  swiperChange(e) {
+    this.setData({switchCurrent : e.detail.current});
+  },
+  data: {
+    switchCurrent: 0,
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
 
   /**

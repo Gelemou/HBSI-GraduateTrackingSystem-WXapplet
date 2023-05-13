@@ -1,2 +1,15 @@
 <!--pages/activities/activities.wxml-->
-<text>pages/activities/activities.wxml</text>
+<view class="container">
+  <view class="title">
+    <text class="{{ switchCurrent == 0 ? 'active' : 'title-1' }}" bindtap="switchNotice">活动通知</text>
+    <text class="{{ switchCurrent == 1 ? 'active' : 'title-2' }}" bindtap="switchGlimplse">活动掠影</text>
+  </view>
+  <swiper class="swiper" bindchange="swiperChange" current="{{ switchCurrent }}">
+    <swiper-item class="swiper-item">
+      <activeNotice></activeNotice>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <activeGlimplse></activeGlimplse>
+    </swiper-item>
+  </swiper>
+</view>

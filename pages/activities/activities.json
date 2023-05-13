@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "activeNotice": "/pages/components/second/activeNotice/activeNotice",
+    "activeGlimplse": "/pages/components/second/activeGlimplse/activeGlimplse"
+  }
 }
