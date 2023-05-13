@@ -1,0 +1,9 @@
+<wxs src="/wxs/imageUrl.wxs" module="url"></wxs>
+<view class="container">
+  <block wx:for="{{ notices }}" wx:key="newsId">
+    <view class="item">
+      <image src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill" class="itemImage"/>
+      <h3 class="itemTitle">{{ item.title }}</h3>
+    </view>
+  </block>
+</view>

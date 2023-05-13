@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item {
+  width: 280rpx;
+  height: 280rpx;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50rpx 5rpx;
+}
+.itemImage {
+  width: 260rpx;
+  height: 260rpx;
+}
