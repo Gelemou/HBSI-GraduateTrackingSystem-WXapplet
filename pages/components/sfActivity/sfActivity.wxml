@@ -6,7 +6,7 @@
     </h3>
     <view>
       <scroll-view class="scrollView" scroll-x="true" scroll-left="1">
-        <block wx:for="{{ background }}" wx:key="*this">
+        <block wx:for="{{ background }}" wx:key="activityId">
           <view class="item">
             <image src="{{ url.getImageUrl(item.coverPicture) }}" mode="aspectFill"/>
           </view>
