@@ -25,6 +25,8 @@ Component({
    */
   methods: {
     onSwitch() {
+      let index = 1;
+      getApp().globalData.index = index;
       wx.switchTab({
         url: '/pages/activities/activities',
       })

@@ -1,25 +1,18 @@
-// const { cursorTo } = require("readline");
-
-// pages/activities/activities.js
+// pages/components/second/showDetail/showDetail.js
 Page({
-  // 点击活动通知时切换样式和内容
-  switchNotice() {
-    this.setData({switchCurrent : 0});
-  },
-  switchGlimplse() {
-    this.setData({switchCurrent : 1});
-  },
-  // 当switchCurrent改变时调用函数
-  swiperChange(e) {
-    this.setData({switchCurrent : e.detail.current});
-  },
+
+  /**
+   * 页面的初始数据
+   */
   data: {
-    switchCurrent: 0,
+
   },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+
   },
 
   /**
@@ -33,13 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow() {
-    var index = getApp().globalData.index;
-    if (index == 1) {
-      this.setData({ switchCurrent: 1 }) 
-    }
-    const pages = getCurrentPages();
-    const perpage = pages[pages.length - 1];
-    perpage.onLoad();
+
   },
 
   /**
