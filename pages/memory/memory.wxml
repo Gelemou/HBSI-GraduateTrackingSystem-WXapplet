@@ -1,2 +1,14 @@
-<!--pages/memory/memory.wxml-->
-<text>pages/memory/memory.wxml</text>
+<wxs module="url" src="/wxs/imageUrl.wxs"></wxs>
+<picker mode="multiSelector" range="{{ multiArray }}" value="{{ multiIndex }}" bindchange="pickerChange" bindcolumnchange="pickerColumnChange">
+  <view class="picker">
+    当前选择: {{ multiArray[0][multiIndex[0]] }},{{ multiArray[1][multiIndex[1]]}}
+  </view>
+</picker>
+<view class="container">
+  <block wx:for="{{ classes }}" wx:key="">
+    <view class="item">
+      <image class="item-image" src="{{url.getImageUrl(item.coverPicture)}}" mode="aspectFill" />
+      <text class="item-text">{{item.majorName}}-{{item.teacherName}}</text>
+    </view>
+  </block>
+</view>
