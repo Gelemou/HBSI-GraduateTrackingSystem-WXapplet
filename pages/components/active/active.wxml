@@ -4,8 +4,10 @@
     <h3 class="title">近期活动 Activities</h3>
   </button>
   <block wx:for="{{ activity }}" wx:key="activityId">
-    <view class="item">
-      {{ item.title }}
-    </view>
+    <navigator class="item" url="/pages/components/third/activeDetail/activeDetail?activityId={{item.activityId}}">
+      <view>
+        {{ item.title }}
+      </view>
+    </navigator>
   </block>
 </view>

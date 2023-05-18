@@ -1,0 +1,32 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* 导航文字 */
+.breadNav {
+  font-size: 30rpx;
+  color: #4e4e4e;
+  margin: 50rpx 0;
+}
+/* 新闻标题 */
+.title {
+  font-size: 80rpx;
+  font-weight: 700;
+  padding-bottom: 40rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid #4e4e4e;
+}
+.content {
+  display: flex;
+  align-items:flex-end
+}
+.time, .readTimes{
+  color: #7b6710;
+  padding:0 20rpx;
+}
+.main-text {
+  font-size: 50rpx;
+  margin-top: 50rpx;
+}

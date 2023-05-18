@@ -7,7 +7,10 @@
     "pages/components/second/newsDetail/newsDetail",
     "pages/components/second/noticeDetail/noticeDetail",
     "pages/components/second/activeDetail/activeDetail",
-    "pages/components/second/showDetail/showDetail"
+    "pages/components/second/showDetail/showDetail",
+    "pages/components/third/newDetail/newDetail",
+    "pages/components/third/noticeDetail/noticeDetail",
+    "pages/components/third/activeDetail/activeDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

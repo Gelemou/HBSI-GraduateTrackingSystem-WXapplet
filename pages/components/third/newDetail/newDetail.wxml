@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="breadNav">
+    首页-新闻中心-新闻详情
+  </view>
+  <view class="title">
+    {{news.title}}
+  </view>
+  <view class="content">
+    <text class="time">
+      发布时间:
+    </text>
+    <text>{{news.createTime}}</text>
+    <text class="readTimes">
+      浏览次数:
+    </text>
+    <text>{{news.readtimes}}</text>
+  </view>
+  <!-- 正文部分 -->
+  <view class="main-text">
+    <rich-text nodes="{{content}}"/> 
+  </view>
+</view>
