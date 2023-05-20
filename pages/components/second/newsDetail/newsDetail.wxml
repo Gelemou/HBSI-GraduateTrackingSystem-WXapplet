@@ -5,12 +5,14 @@
     <text class="enTitle">News Detail</text> <text class="zhTitle">新闻详情</text>
   </view>
   <block wx:for="{{news}}" wx:key="newsId">
-    <view class="item">
-      <image class="itemImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill"/>
-      <view class="titleTime">
-        <h3 class="itemTitle">{{ item.title }}</h3>
-        <span class="itemTime">{{ item.createTime }}</span>
+    <navigator url="/pages/components/third/newDetail/newDetail?newsId={{item.newsId}}">
+      <view class="item">
+        <image class="itemImage" src="{{ url.getImageUrl(item.image1) }}" mode="aspectFill" />
+        <view class="titleTime">
+          <h3 class="itemTitle">{{ item.title }}</h3>
+          <span class="itemTime">{{ item.createTime }}</span>
+        </view>
       </view>
-    </view>
+    </navigator>
   </block>
 </view>

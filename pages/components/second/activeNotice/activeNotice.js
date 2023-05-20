@@ -16,8 +16,8 @@ Component({
   },
   created:function() {
     let that = this;
-    http.request("/news/wx/getListAll", {pageNum: 1, pageSize: 4, newsType: 2}).then((res) => {
-      that.setData({ notices: res.result.list });
+    http.request("/activity/getListAll", {pageNum: 1, pageSize: 4}).then((res) => {
+      that.setData({ notices: res.result.list});
     })
   },
   /**
